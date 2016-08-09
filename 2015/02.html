@@ -54,18 +54,20 @@
 		display: inline-block;
 	}
 	.twitter div .img-twitter {
-		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAMAAABPqWaPAAABCFBMVEX///8AAAAAAAAAVVUzMzMrKyskJEkgIEAkNzcrKzkmM0AuLjomLzkuLjcsLD4pMTomLTkoLToqLjspLTooLzkpLTspMDooLzwoLjwrLjspLzwpLjooLjsoLTopLjsqLzsqLzspLjopLjwpLTsoLzopLTwoLzwpLTwoLjsqLjopLzspLjooLTspLzsoLTspLjspLTopLTspLTsoLjsqLjspLjopLzspLjoqLjspLTspLjspLjsqLjspLjspLjspLjsoLzspLjwpLjspLTspLjoqLjspLjsoLjwpLTspLjspLjspLjspLjwpLTspLjspLjspLjspLjspLjspLjspLjspLjspLjspLjvXK0+DAAAAV3RSTlMAAQIDBQYHCA4SFBYbHB0fKDk9PkdKS0xNTlFYX2BkZ2hpb3Fyd3h8hYyOkJKUmJydqa6xsrO6vL6/wsPExsfO0NLU1drd3+Pm6+zv8PHy8/X3+Pr8/f6MFoQXAAAAzElEQVR4AWXBCT/6cADH8c//z5CIwhw5mEMOQuSOiExu2vf5PxPb7Le2195v0grV+5fz1T6suRwslolNvSnQ2HVrQK07TyTvKnJlT8OTvP0hQpsyPm9zcCKpXbbwHctoDgOOAu72RJ5LGWv4Bk4V6bzLmMF3Uf1Qxii+M2W5BGxl1QntKKPCn4Wm0r7HCPUfPXhKOSBS/FHK8wiG86UEz6an4DwqtkFCqSGju0JkvLS8d61YaxJjcKmlWHvdIuH/bOXw5rVzV98q/qPnF4fnYu9LzkUJAAAAAElFTkSuQmCC);
-		background-repeat: no-repeat;
-		display: inline-block;
 		width: 25px;
 		height: 20px;
+		display: inline-block;
+		background-image: url('/static/twitter.png');
+		background-position: 0 0;
+		background-repeat: no-repeat;
 	}
 	.twitter div:hover .img-twitter {
-		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAMAAABPqWaPAAABCFBMVEX///8AAAAAgIBVVVUzM2YrVVUkSUlAQGA3SVs5R1UzTVk6Rl05TFU3SVs1Rlg6SlozRlk2SFk2R1g1RlY2SFo3SFo2R1g2Rlc1Rlk4SFg2SFg3SFc2Rlk1SFg2R1k2SFk2R1g1Rlc3R1c2Rlg2SFc2R1g1Rlc1SFg2R1g3R1c2SFg1R1k2SFc1R1g2Rlc2Rlg2R1g2R1g2Rlg1R1g2SFc2R1g1R1g2R1g2R1k1R1g2R1g2R1g3SFg2R1g2Rlg2R1g2R1g1Rlc2R1g2R1k2R1g2SFg2R1g2R1g2R1g2R1g2R1g2R1c2R1g2R1g2R1k2R1g2R1g2R1g2R1g2R1g2R1g2R1g2R1g2R1jsTnONAAAAV3RSTlMAAQIDBQYHCA4SFBYbHB0fKDk9PkdKS0xNTlFYX2BkZ2hpb3Fyd3h8hYyOkJKUmJydqa6xsrO6vL6/wsPExsfO0NLU1drd3+Pm6+zv8PHy8/X3+Pr8/f6MFoQXAAAAzElEQVR4AWXBCT/6cADH8c//z5CIwhw5mEMOQuSOiExu2vf5PxPb7Le2195v0grV+5fz1T6suRwslolNvSnQ2HVrQK07TyTvKnJlT8OTvP0hQpsyPm9zcCKpXbbwHctoDgOOAu72RJ5LGWv4Bk4V6bzLmMF3Uf1Qxii+M2W5BGxl1QntKKPCn4Wm0r7HCPUfPXhKOSBS/FHK8wiG86UEz6an4DwqtkFCqSGju0JkvLS8d61YaxJjcKmlWHvdIuH/bOXw5rVzV98q/qPnF4fnYu9LzkUJAAAAAElFTkSuQmCC);
-		background-repeat: no-repeat;
-		display: inline-block;
 		width: 25px;
 		height: 20px;
+		display: inline-block;
+		background-image: url('/static/twitter.png');
+		background-position: 0 -20px;
+		background-repeat: no-repeat;
 	}
 	.releases {
 		margin-top: 10px;
@@ -160,6 +162,35 @@
 		background-color: #B2542C;
 		height: 4px;
 	}
+	.img-popular {
+		position: absolute;
+		display: inline;
+		width: 19px;
+		height: 20px;
+		background-image: url('/static/star.png');
+		background-repeat: no-repeat;
+		margin-left: -55px;
+		margin-top: 5px;
+		cursor: pointer;
+	}
+	.img-popular.positive.active {
+		background-image: url('/static/star_green.png');
+	}
+	.img-popular.positive:hover {
+		background-image: url('/static/star_green.png');
+	}
+	.img-popular.neutral.active {
+		background-image: url('/static/star_brown.png');
+	}
+	.img-popular.neutral:hover {
+		background-image: url('/static/star_brown.png');
+	}
+	.img-popular.negative.active {
+		background-image: url('/static/star_red.png');
+	}
+	.img-popular.negative:hover {
+		background-image: url('/static/star_red.png');
+	}
 	.release-score {
 		display: inline-block;
 		font-size: 16px;
@@ -177,8 +208,39 @@
 	</style>
 	<noscript><style type="text/css">.release-image { display: none; }</style></noscript>
 	<script type="text/javascript">
-	function isElementInViewport(el)
-	{
+	function togglePopular() {
+		// find longest row
+		var releaseNames = document.getElementsByClassName('release-name');
+		var maxWidth = 0;
+		for (var i = 0; i < releaseNames.length; i++) {
+			if (releaseNames[i].offsetWidth > maxWidth) {
+				maxWidth = releaseNames[i].offsetWidth;
+			}
+		}
+		for (var i = 0; i < releaseNames.length; i++) {
+			releaseNames[i].style.width = maxWidth + 'px';
+		}
+		// filter popular rows
+		var unpopularRows = document.querySelectorAll('[data-popular="0"]');
+		var imgArray = document.getElementsByClassName('img-popular');
+		var setDisplay = 'none';
+		if (unpopularRows[0].style.display == 'none') {
+			setDisplay = 'table-row';
+		};
+		for (var i = 0; i < imgArray.length; i++) {
+			if (setDisplay == 'none') {
+				imgArray[i].classList.add('active');
+			} else {
+				imgArray[i].classList.remove('active');
+			}
+		};
+		for (var i = 0; i < unpopularRows.length; i++) {
+			unpopularRows[i].style.display = setDisplay;
+		};
+		// load images
+		scrollHappened = true;
+	}
+	function isElementInViewport(el) {
 		var rect = el.getBoundingClientRect();
 		return (
 			rect.top >= 0 &&
@@ -187,14 +249,11 @@
 			rect.right <= (window.innerWidth + 100 || document.documentElement.clientWidth)
 		);
 	}
-	function fadeIn(el, ms)
-	{
-		function func()
-		{ 
+	function fadeIn(el, ms) {
+		function func() { 
 			opacity += gap;
 			el.style.opacity = opacity;
-			if (opacity >= 1)
-			{
+			if (opacity >= 1) {
 				window.clearInterval(fading);
 			}
 		}
@@ -205,39 +264,29 @@
 		el.style.opacity = opacity;
 		var fading = window.setInterval(func, interval);
 	}
-	function fadeInOnLoad(img, ms)
-	{
+	function fadeInOnLoad(img, ms) {
 		img.style.opacity = 0;
-		if (img.src.substr(0,5) != 'data:')
-		{
+		if (img.src.substr(0,5) != 'data:') {
 			fadeIn(img, ms);
 		}
 	}
-	function loadImages()
-	{
-		if (!scrollHappened)
-		{
+	function loadImages() {
+		if (!scrollHappened) {
 			return;
 		}
 		var imageArray = document.getElementsByClassName('release-image');
 		var loadedImageCount = 0;
-		for (var i = 0; i < imageArray.length; i++)
-		{
+		for (var i = 0; i < imageArray.length; i++) {
 			var releaseID = imageArray[i].dataset.releaseid;
-			if (imageArray[i].src.substr(0,5) != 'data:')
-			{
+			if (imageArray[i].src.substr(0,5) != 'data:') {
 				loadedImageCount++;
-			}
-			else
-			{
-				if (isElementInViewport(imageArray[i]))
-				{
+			} else {
+				if (isElementInViewport(imageArray[i])) {
 					imageArray[i].src = 'http://cdn.akamai.steamstatic.com/steam/apps/' + releaseID + '/capsule_sm_120.jpg';
 				}
 			}
 		}
-		if (loadedImageCount == imageArray.length)
-		{
+		if (loadedImageCount == imageArray.length) {
 			clearInterval(loadInterval);
 		}
 		scrollHappened = false;
@@ -259,7 +308,7 @@
 <div class="releases">
 	<table class="releases-table" border="0" cellspacing="0" cellpadding="0">
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/328760">
 					<img data-releaseid="328760" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -278,8 +327,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">98%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 98%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">98%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 98%;"></div></div>
 				
 			</td>
 			<td>
@@ -292,7 +344,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/270450">
 					<img data-releaseid="270450" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -311,8 +363,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">98%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 98%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">98%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 98%;"></div></div>
 				
 			</td>
 			<td>
@@ -325,7 +380,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/322680">
 					<img data-releaseid="322680" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -344,8 +399,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">96%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 96%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">96%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 96%;"></div></div>
 				
 			</td>
 			<td>
@@ -358,7 +414,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/320760">
 					<img data-releaseid="320760" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -377,8 +433,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">95%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 95%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">95%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 95%;"></div></div>
 				
 			</td>
 			<td>
@@ -391,7 +448,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/298630">
 					<img data-releaseid="298630" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -410,8 +467,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">94%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 94%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">94%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 94%;"></div></div>
 				
 			</td>
 			<td>
@@ -424,7 +484,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/273750">
 					<img data-releaseid="273750" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -443,8 +503,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">94%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 94%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">94%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 94%;"></div></div>
 				
 			</td>
 			<td>
@@ -457,7 +518,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/329130">
 					<img data-releaseid="329130" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -476,8 +537,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">94%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 94%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">94%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 94%;"></div></div>
 				
 			</td>
 			<td>
@@ -490,7 +554,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/323320">
 					<img data-releaseid="323320" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -509,8 +573,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">94%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 94%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">94%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 94%;"></div></div>
 				
 			</td>
 			<td>
@@ -523,7 +590,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/273840">
 					<img data-releaseid="273840" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -542,8 +609,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">93%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 93%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">93%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 93%;"></div></div>
 				
 			</td>
 			<td>
@@ -556,7 +624,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/266510">
 					<img data-releaseid="266510" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -575,8 +643,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">93%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 93%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">93%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 93%;"></div></div>
 				
 			</td>
 			<td>
@@ -589,7 +660,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/279940">
 					<img data-releaseid="279940" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -608,8 +679,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">93%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 93%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">93%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 93%;"></div></div>
 				
 			</td>
 			<td>
@@ -622,7 +694,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/314660">
 					<img data-releaseid="314660" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -641,8 +713,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">93%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 93%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">93%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 93%;"></div></div>
 				
 			</td>
 			<td>
@@ -655,7 +730,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/342490">
 					<img data-releaseid="342490" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -674,8 +749,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">91%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 91%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">91%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 91%;"></div></div>
 				
 			</td>
 			<td>
@@ -688,7 +764,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/335430">
 					<img data-releaseid="335430" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -707,8 +783,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">91%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 91%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">91%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 91%;"></div></div>
 				
 			</td>
 			<td>
@@ -721,7 +798,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/208750">
 					<img data-releaseid="208750" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -740,8 +817,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">91%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 91%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">91%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 91%;"></div></div>
 				
 			</td>
 			<td>
@@ -754,7 +832,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346560">
 					<img data-releaseid="346560" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -773,8 +851,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">90%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 90%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">90%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 90%;"></div></div>
 				
 			</td>
 			<td>
@@ -787,7 +866,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/310510">
 					<img data-releaseid="310510" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -806,8 +885,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">90%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 90%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">90%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 90%;"></div></div>
 				
 			</td>
 			<td>
@@ -820,7 +900,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/343280">
 					<img data-releaseid="343280" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -839,8 +919,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">90%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 90%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">90%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 90%;"></div></div>
 				
 			</td>
 			<td>
@@ -853,7 +934,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/338960">
 					<img data-releaseid="338960" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -872,8 +953,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">90%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 90%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">90%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 90%;"></div></div>
 				
 			</td>
 			<td>
@@ -886,7 +968,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/301920">
 					<img data-releaseid="301920" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -905,8 +987,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">90%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 90%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">90%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 90%;"></div></div>
 				
 			</td>
 			<td>
@@ -919,7 +1002,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345180">
 					<img data-releaseid="345180" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -938,8 +1021,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">90%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 90%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">90%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 90%;"></div></div>
 				
 			</td>
 			<td>
@@ -952,7 +1036,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/315840">
 					<img data-releaseid="315840" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -971,8 +1055,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">89%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 89%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">89%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 89%;"></div></div>
 				
 			</td>
 			<td>
@@ -985,7 +1070,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/222440">
 					<img data-releaseid="222440" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1004,8 +1089,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">89%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 89%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">89%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 89%;"></div></div>
 				
 			</td>
 			<td>
@@ -1018,7 +1104,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/335920">
 					<img data-releaseid="335920" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1037,8 +1123,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">89%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 89%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">89%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 89%;"></div></div>
 				
 			</td>
 			<td>
@@ -1051,7 +1138,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/338890">
 					<img data-releaseid="338890" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1070,8 +1157,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">89%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 89%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">89%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 89%;"></div></div>
 				
 			</td>
 			<td>
@@ -1084,7 +1172,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/262060">
 					<img data-releaseid="262060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1103,8 +1191,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">89%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 89%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">89%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 89%;"></div></div>
 				
 			</td>
 			<td>
@@ -1117,7 +1208,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/333950">
 					<img data-releaseid="333950" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1136,8 +1227,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">88%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 88%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">88%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 88%;"></div></div>
 				
 			</td>
 			<td>
@@ -1150,7 +1244,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344860">
 					<img data-releaseid="344860" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1169,8 +1263,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">88%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 88%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">88%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 88%;"></div></div>
 				
 			</td>
 			<td>
@@ -1183,7 +1278,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/316610">
 					<img data-releaseid="316610" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1202,8 +1297,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">88%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 88%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">88%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 88%;"></div></div>
 				
 			</td>
 			<td>
@@ -1216,7 +1312,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/342560">
 					<img data-releaseid="342560" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1235,8 +1331,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">88%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 88%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">88%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 88%;"></div></div>
 				
 			</td>
 			<td>
@@ -1249,7 +1346,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/335840">
 					<img data-releaseid="335840" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1268,8 +1365,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">87%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 87%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">87%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 87%;"></div></div>
 				
 			</td>
 			<td>
@@ -1282,7 +1380,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/338320">
 					<img data-releaseid="338320" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1301,8 +1399,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">87%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 87%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">87%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 87%;"></div></div>
 				
 			</td>
 			<td>
@@ -1315,7 +1414,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/323470">
 					<img data-releaseid="323470" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1334,8 +1433,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">87%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 87%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">87%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 87%;"></div></div>
 				
 			</td>
 			<td>
@@ -1348,7 +1450,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/297060">
 					<img data-releaseid="297060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1367,8 +1469,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">87%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 87%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">87%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 87%;"></div></div>
 				
 			</td>
 			<td>
@@ -1381,7 +1484,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/294060">
 					<img data-releaseid="294060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1400,8 +1503,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">87%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 87%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">87%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 87%;"></div></div>
 				
 			</td>
 			<td>
@@ -1414,7 +1518,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/244160">
 					<img data-releaseid="244160" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1433,8 +1537,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">86%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 86%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">86%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 86%;"></div></div>
 				
 			</td>
 			<td>
@@ -1447,7 +1554,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/304650">
 					<img data-releaseid="304650" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1466,8 +1573,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">86%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 86%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">86%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 86%;"></div></div>
 				
 			</td>
 			<td>
@@ -1480,7 +1590,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340390">
 					<img data-releaseid="340390" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1499,8 +1609,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">86%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 86%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">86%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 86%;"></div></div>
 				
 			</td>
 			<td>
@@ -1513,7 +1624,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/330370">
 					<img data-releaseid="330370" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1532,8 +1643,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">86%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 86%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">86%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 86%;"></div></div>
 				
 			</td>
 			<td>
@@ -1546,7 +1658,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/331970">
 					<img data-releaseid="331970" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1565,8 +1677,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">85%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 85%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">85%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 85%;"></div></div>
 				
 			</td>
 			<td>
@@ -1579,7 +1692,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/353360">
 					<img data-releaseid="353360" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1598,8 +1711,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">84%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 84%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">84%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 84%;"></div></div>
 				
 			</td>
 			<td>
@@ -1612,7 +1728,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344340">
 					<img data-releaseid="344340" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1631,8 +1747,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">83%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 83%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">83%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 83%;"></div></div>
 				
 			</td>
 			<td>
@@ -1645,7 +1762,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345090">
 					<img data-releaseid="345090" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1664,8 +1781,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">82%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 82%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">82%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 82%;"></div></div>
 				
 			</td>
 			<td>
@@ -1678,7 +1796,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/307030">
 					<img data-releaseid="307030" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1697,8 +1815,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">82%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 82%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">82%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 82%;"></div></div>
 				
 			</td>
 			<td>
@@ -1711,7 +1830,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/317100">
 					<img data-releaseid="317100" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1730,8 +1849,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">82%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 82%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">82%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 82%;"></div></div>
 				
 			</td>
 			<td>
@@ -1744,7 +1864,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/237350">
 					<img data-releaseid="237350" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1763,8 +1883,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">81%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 81%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">81%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 81%;"></div></div>
 				
 			</td>
 			<td>
@@ -1777,7 +1898,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/336060">
 					<img data-releaseid="336060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1796,8 +1917,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">81%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 81%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">81%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 81%;"></div></div>
 				
 			</td>
 			<td>
@@ -1810,7 +1932,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346180">
 					<img data-releaseid="346180" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1829,8 +1951,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">81%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 81%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">81%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 81%;"></div></div>
 				
 			</td>
 			<td>
@@ -1843,7 +1968,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/320540">
 					<img data-releaseid="320540" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1862,8 +1987,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">81%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 81%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">81%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 81%;"></div></div>
 				
 			</td>
 			<td>
@@ -1876,7 +2002,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/351470">
 					<img data-releaseid="351470" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1895,8 +2021,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">81%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 81%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">81%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 81%;"></div></div>
 				
 			</td>
 			<td>
@@ -1909,7 +2036,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345200">
 					<img data-releaseid="345200" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1928,8 +2055,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">81%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 81%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">81%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 81%;"></div></div>
 				
 			</td>
 			<td>
@@ -1942,7 +2070,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340120">
 					<img data-releaseid="340120" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1961,8 +2089,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">81%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 81%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">81%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 81%;"></div></div>
 				
 			</td>
 			<td>
@@ -1975,7 +2104,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/262960">
 					<img data-releaseid="262960" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -1994,8 +2123,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">80%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 80%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">80%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 80%;"></div></div>
 				
 			</td>
 			<td>
@@ -2008,7 +2138,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/342980">
 					<img data-releaseid="342980" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2027,8 +2157,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">80%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 80%;"></div></div>
+					<div class="img-popular positive" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score positive" title="Wilson score">80%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 80%;"></div></div>
 				
 			</td>
 			<td>
@@ -2041,7 +2174,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/333510">
 					<img data-releaseid="333510" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2060,8 +2193,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">80%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 80%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">80%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 80%;"></div></div>
 				
 			</td>
 			<td>
@@ -2074,7 +2208,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345010">
 					<img data-releaseid="345010" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2093,8 +2227,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score positive" title="Positive Attention (Wilson score)">80%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="positive" style="width: 80%;"></div></div>
+				
+					<div class="release-score positive" title="Wilson score">80%</div>
+					<div class="release-bar" title="Wilson score"><div class="positive" style="width: 80%;"></div></div>
 				
 			</td>
 			<td>
@@ -2107,7 +2242,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341090">
 					<img data-releaseid="341090" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2126,8 +2261,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">79%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 79%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">79%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 79%;"></div></div>
 				
 			</td>
 			<td>
@@ -2140,7 +2276,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/320520">
 					<img data-releaseid="320520" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2159,8 +2295,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">79%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 79%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">79%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 79%;"></div></div>
 				
 			</td>
 			<td>
@@ -2173,7 +2310,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/273500">
 					<img data-releaseid="273500" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2192,8 +2329,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">78%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 78%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">78%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 78%;"></div></div>
 				
 			</td>
 			<td>
@@ -2206,7 +2344,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/325610">
 					<img data-releaseid="325610" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2225,8 +2363,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">78%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 78%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">78%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 78%;"></div></div>
 				
 			</td>
 			<td>
@@ -2239,7 +2380,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/339130">
 					<img data-releaseid="339130" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2258,8 +2399,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">77%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 77%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">77%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 77%;"></div></div>
 				
 			</td>
 			<td>
@@ -2272,7 +2414,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/342350">
 					<img data-releaseid="342350" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2291,8 +2433,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">77%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 77%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">77%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 77%;"></div></div>
 				
 			</td>
 			<td>
@@ -2305,7 +2448,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/326380">
 					<img data-releaseid="326380" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2324,8 +2467,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">77%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 77%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">77%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 77%;"></div></div>
 				
 			</td>
 			<td>
@@ -2338,7 +2482,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/271240">
 					<img data-releaseid="271240" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2357,8 +2501,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">76%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 76%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">76%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 76%;"></div></div>
 				
 			</td>
 			<td>
@@ -2371,7 +2518,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/333970">
 					<img data-releaseid="333970" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2390,8 +2537,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">76%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 76%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">76%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 76%;"></div></div>
 				
 			</td>
 			<td>
@@ -2404,7 +2552,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347940">
 					<img data-releaseid="347940" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2423,8 +2571,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">76%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 76%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">76%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 76%;"></div></div>
 				
 			</td>
 			<td>
@@ -2437,7 +2586,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/324710">
 					<img data-releaseid="324710" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2456,8 +2605,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">76%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 76%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">76%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 76%;"></div></div>
 				
 			</td>
 			<td>
@@ -2470,7 +2620,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/253390">
 					<img data-releaseid="253390" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2489,8 +2639,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">76%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 76%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">76%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 76%;"></div></div>
 				
 			</td>
 			<td>
@@ -2503,7 +2654,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/332730">
 					<img data-releaseid="332730" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2522,8 +2673,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">75%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 75%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">75%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 75%;"></div></div>
 				
 			</td>
 			<td>
@@ -2536,7 +2688,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/328940">
 					<img data-releaseid="328940" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2555,8 +2707,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2569,7 +2722,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/312790">
 					<img data-releaseid="312790" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2588,8 +2741,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2602,7 +2756,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/307600">
 					<img data-releaseid="307600" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2621,8 +2775,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2635,7 +2790,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340450">
 					<img data-releaseid="340450" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2654,8 +2809,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2668,7 +2824,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344300">
 					<img data-releaseid="344300" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2687,8 +2843,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2701,7 +2858,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346440">
 					<img data-releaseid="346440" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2720,8 +2877,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2734,7 +2892,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341820">
 					<img data-releaseid="341820" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2753,8 +2911,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2767,7 +2926,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/332630">
 					<img data-releaseid="332630" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2786,8 +2945,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">74%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 74%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">74%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 74%;"></div></div>
 				
 			</td>
 			<td>
@@ -2800,7 +2960,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/319740">
 					<img data-releaseid="319740" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2819,8 +2979,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">73%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 73%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">73%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 73%;"></div></div>
 				
 			</td>
 			<td>
@@ -2833,7 +2994,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/343840">
 					<img data-releaseid="343840" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2852,8 +3013,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">72%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 72%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">72%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 72%;"></div></div>
 				
 			</td>
 			<td>
@@ -2866,7 +3028,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/301050">
 					<img data-releaseid="301050" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2885,8 +3047,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">71%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 71%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">71%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 71%;"></div></div>
 				
 			</td>
 			<td>
@@ -2899,7 +3062,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/329200">
 					<img data-releaseid="329200" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2918,8 +3081,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">71%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 71%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">71%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 71%;"></div></div>
 				
 			</td>
 			<td>
@@ -2932,7 +3096,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/299640">
 					<img data-releaseid="299640" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2951,8 +3115,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">71%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 71%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">71%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 71%;"></div></div>
 				
 			</td>
 			<td>
@@ -2965,7 +3130,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340440">
 					<img data-releaseid="340440" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -2984,8 +3149,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">71%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 71%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">71%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 71%;"></div></div>
 				
 			</td>
 			<td>
@@ -2998,7 +3164,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/266310">
 					<img data-releaseid="266310" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3017,8 +3183,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">71%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 71%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">71%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 71%;"></div></div>
 				
 			</td>
 			<td>
@@ -3031,7 +3198,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341390">
 					<img data-releaseid="341390" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3050,8 +3217,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">70%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 70%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">70%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 70%;"></div></div>
 				
 			</td>
 			<td>
@@ -3064,7 +3232,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/315060">
 					<img data-releaseid="315060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3083,8 +3251,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">70%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 70%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">70%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 70%;"></div></div>
 				
 			</td>
 			<td>
@@ -3097,7 +3266,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/331790">
 					<img data-releaseid="331790" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3116,8 +3285,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">70%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 70%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">70%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 70%;"></div></div>
 				
 			</td>
 			<td>
@@ -3130,7 +3300,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346510">
 					<img data-releaseid="346510" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3149,8 +3319,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">70%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 70%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">70%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 70%;"></div></div>
 				
 			</td>
 			<td>
@@ -3163,7 +3334,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344230">
 					<img data-releaseid="344230" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3182,8 +3353,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">70%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 70%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">70%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 70%;"></div></div>
 				
 			</td>
 			<td>
@@ -3196,7 +3368,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346630">
 					<img data-releaseid="346630" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3215,8 +3387,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">70%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 70%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">70%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 70%;"></div></div>
 				
 			</td>
 			<td>
@@ -3229,7 +3402,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/335010">
 					<img data-releaseid="335010" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3248,8 +3421,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">70%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 70%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">70%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 70%;"></div></div>
 				
 			</td>
 			<td>
@@ -3262,7 +3436,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/333530">
 					<img data-releaseid="333530" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3281,8 +3455,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">69%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 69%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">69%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 69%;"></div></div>
 				
 			</td>
 			<td>
@@ -3295,7 +3470,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/351730">
 					<img data-releaseid="351730" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3314,8 +3489,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">69%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 69%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">69%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 69%;"></div></div>
 				
 			</td>
 			<td>
@@ -3328,7 +3504,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/338800">
 					<img data-releaseid="338800" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3347,8 +3523,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">69%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 69%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">69%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 69%;"></div></div>
 				
 			</td>
 			<td>
@@ -3361,7 +3538,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/321260">
 					<img data-releaseid="321260" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3380,8 +3557,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">69%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 69%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">69%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 69%;"></div></div>
 				
 			</td>
 			<td>
@@ -3394,7 +3574,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/350510">
 					<img data-releaseid="350510" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3413,8 +3593,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">68%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 68%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">68%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 68%;"></div></div>
 				
 			</td>
 			<td>
@@ -3427,7 +3608,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346120">
 					<img data-releaseid="346120" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3446,8 +3627,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">68%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 68%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">68%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 68%;"></div></div>
 				
 			</td>
 			<td>
@@ -3460,7 +3644,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/299250">
 					<img data-releaseid="299250" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3479,8 +3663,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">67%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 67%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">67%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 67%;"></div></div>
 				
 			</td>
 			<td>
@@ -3493,7 +3678,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/273350">
 					<img data-releaseid="273350" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3512,8 +3697,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">66%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 66%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">66%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 66%;"></div></div>
 				
 			</td>
 			<td>
@@ -3526,7 +3714,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/351340">
 					<img data-releaseid="351340" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3545,8 +3733,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">65%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 65%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">65%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 65%;"></div></div>
 				
 			</td>
 			<td>
@@ -3559,7 +3748,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/322520">
 					<img data-releaseid="322520" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3578,8 +3767,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">65%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 65%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">65%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 65%;"></div></div>
 				
 			</td>
 			<td>
@@ -3592,7 +3782,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/338980">
 					<img data-releaseid="338980" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3611,8 +3801,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">64%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 64%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">64%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 64%;"></div></div>
 				
 			</td>
 			<td>
@@ -3625,7 +3816,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/336200">
 					<img data-releaseid="336200" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3644,8 +3835,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">64%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 64%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">64%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 64%;"></div></div>
 				
 			</td>
 			<td>
@@ -3658,7 +3850,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/260430">
 					<img data-releaseid="260430" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3677,8 +3869,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">64%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 64%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">64%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 64%;"></div></div>
 				
 			</td>
 			<td>
@@ -3691,7 +3884,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/323720">
 					<img data-releaseid="323720" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3710,8 +3903,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">63%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 63%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">63%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 63%;"></div></div>
 				
 			</td>
 			<td>
@@ -3724,7 +3918,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347560">
 					<img data-releaseid="347560" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3743,8 +3937,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">62%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 62%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">62%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 62%;"></div></div>
 				
 			</td>
 			<td>
@@ -3757,7 +3952,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/285920">
 					<img data-releaseid="285920" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3776,8 +3971,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">61%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 61%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">61%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 61%;"></div></div>
 				
 			</td>
 			<td>
@@ -3790,7 +3986,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/306440">
 					<img data-releaseid="306440" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3809,8 +4005,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">59%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 59%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">59%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 59%;"></div></div>
 				
 			</td>
 			<td>
@@ -3823,7 +4020,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340070">
 					<img data-releaseid="340070" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3842,8 +4039,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">58%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 58%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">58%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 58%;"></div></div>
 				
 			</td>
 			<td>
@@ -3856,7 +4054,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344750">
 					<img data-releaseid="344750" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3875,8 +4073,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">58%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 58%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">58%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 58%;"></div></div>
 				
 			</td>
 			<td>
@@ -3889,7 +4088,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340950">
 					<img data-releaseid="340950" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3908,8 +4107,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">58%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 58%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">58%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 58%;"></div></div>
 				
 			</td>
 			<td>
@@ -3922,7 +4122,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341080">
 					<img data-releaseid="341080" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3941,8 +4141,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">58%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 58%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">58%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 58%;"></div></div>
 				
 			</td>
 			<td>
@@ -3955,7 +4156,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340210">
 					<img data-releaseid="340210" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -3974,8 +4175,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">58%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 58%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">58%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 58%;"></div></div>
 				
 			</td>
 			<td>
@@ -3988,7 +4190,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348790">
 					<img data-releaseid="348790" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4007,8 +4209,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">58%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 58%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">58%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 58%;"></div></div>
 				
 			</td>
 			<td>
@@ -4021,7 +4224,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/258160">
 					<img data-releaseid="258160" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4040,8 +4243,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">57%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 57%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">57%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 57%;"></div></div>
 				
 			</td>
 			<td>
@@ -4054,7 +4260,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/342480">
 					<img data-releaseid="342480" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4073,8 +4279,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">57%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 57%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">57%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 57%;"></div></div>
 				
 			</td>
 			<td>
@@ -4087,7 +4294,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/296830">
 					<img data-releaseid="296830" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4106,8 +4313,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">57%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 57%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">57%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 57%;"></div></div>
 				
 			</td>
 			<td>
@@ -4120,7 +4328,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/287290">
 					<img data-releaseid="287290" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4139,8 +4347,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">56%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 56%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">56%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 56%;"></div></div>
 				
 			</td>
 			<td>
@@ -4153,7 +4364,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/293010">
 					<img data-releaseid="293010" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4172,8 +4383,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">55%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 55%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">55%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 55%;"></div></div>
 				
 			</td>
 			<td>
@@ -4186,7 +4400,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345220">
 					<img data-releaseid="345220" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4205,8 +4419,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">54%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 54%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">54%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 54%;"></div></div>
 				
 			</td>
 			<td>
@@ -4219,7 +4434,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348450">
 					<img data-releaseid="348450" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4238,8 +4453,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">54%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 54%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">54%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 54%;"></div></div>
 				
 			</td>
 			<td>
@@ -4252,7 +4468,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346080">
 					<img data-releaseid="346080" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4271,8 +4487,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">54%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 54%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">54%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 54%;"></div></div>
 				
 			</td>
 			<td>
@@ -4285,7 +4502,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/339040">
 					<img data-releaseid="339040" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4304,8 +4521,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">54%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 54%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">54%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 54%;"></div></div>
 				
 			</td>
 			<td>
@@ -4318,7 +4536,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/330760">
 					<img data-releaseid="330760" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4337,8 +4555,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">53%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 53%;"></div></div>
+					<div class="img-popular neutral" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score neutral" title="Wilson score">53%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 53%;"></div></div>
 				
 			</td>
 			<td>
@@ -4351,7 +4572,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/339160">
 					<img data-releaseid="339160" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4370,8 +4591,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score neutral" title="Positive Attention (Wilson score)">52%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="neutral" style="width: 52%;"></div></div>
+				
+					<div class="release-score neutral" title="Wilson score">52%</div>
+					<div class="release-bar" title="Wilson score"><div class="neutral" style="width: 52%;"></div></div>
 				
 			</td>
 			<td>
@@ -4384,7 +4606,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349530">
 					<img data-releaseid="349530" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4403,8 +4625,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">49%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 49%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">49%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 49%;"></div></div>
 				
 			</td>
 			<td>
@@ -4417,7 +4640,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/333350">
 					<img data-releaseid="333350" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4436,8 +4659,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">49%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 49%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">49%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 49%;"></div></div>
 				
 			</td>
 			<td>
@@ -4450,7 +4674,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340470">
 					<img data-releaseid="340470" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4469,8 +4693,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">48%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 48%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">48%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 48%;"></div></div>
 				
 			</td>
 			<td>
@@ -4483,7 +4708,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341750">
 					<img data-releaseid="341750" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4502,8 +4727,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4516,7 +4742,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/339860">
 					<img data-releaseid="339860" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4535,8 +4761,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4549,7 +4776,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/335550">
 					<img data-releaseid="335550" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4568,8 +4795,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4582,7 +4810,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349500">
 					<img data-releaseid="349500" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4601,8 +4829,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4615,7 +4844,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/271990">
 					<img data-releaseid="271990" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4634,8 +4863,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4648,7 +4878,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346210">
 					<img data-releaseid="346210" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4667,8 +4897,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4681,7 +4912,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341310">
 					<img data-releaseid="341310" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4700,8 +4931,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4714,7 +4946,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340380">
 					<img data-releaseid="340380" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4733,8 +4965,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4747,7 +4980,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/337280">
 					<img data-releaseid="337280" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4766,8 +4999,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4780,7 +5014,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/324360">
 					<img data-releaseid="324360" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4799,8 +5033,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">47%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 47%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">47%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 47%;"></div></div>
 				
 			</td>
 			<td>
@@ -4813,7 +5048,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346160">
 					<img data-releaseid="346160" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4832,8 +5067,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">45%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 45%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">45%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 45%;"></div></div>
 				
 			</td>
 			<td>
@@ -4846,7 +5082,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/342740">
 					<img data-releaseid="342740" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4865,8 +5101,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">45%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 45%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">45%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 45%;"></div></div>
 				
 			</td>
 			<td>
@@ -4879,7 +5116,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345640">
 					<img data-releaseid="345640" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4898,8 +5135,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">45%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 45%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">45%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 45%;"></div></div>
 				
 			</td>
 			<td>
@@ -4912,7 +5150,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/343360">
 					<img data-releaseid="343360" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4931,8 +5169,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">44%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 44%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">44%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 44%;"></div></div>
 				
 			</td>
 			<td>
@@ -4945,7 +5184,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/352030">
 					<img data-releaseid="352030" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4964,8 +5203,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">44%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 44%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">44%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 44%;"></div></div>
 				
 			</td>
 			<td>
@@ -4978,7 +5218,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347440">
 					<img data-releaseid="347440" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -4997,8 +5237,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">43%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 43%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">43%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 43%;"></div></div>
 				
 			</td>
 			<td>
@@ -5011,7 +5252,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348270">
 					<img data-releaseid="348270" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5030,8 +5271,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">43%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 43%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">43%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 43%;"></div></div>
 				
 			</td>
 			<td>
@@ -5044,7 +5286,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/322540">
 					<img data-releaseid="322540" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5063,8 +5305,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">42%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 42%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">42%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 42%;"></div></div>
 				
 			</td>
 			<td>
@@ -5077,7 +5320,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/311490">
 					<img data-releaseid="311490" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5096,8 +5339,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">42%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 42%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">42%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 42%;"></div></div>
 				
 			</td>
 			<td>
@@ -5110,7 +5354,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341070">
 					<img data-releaseid="341070" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5129,8 +5373,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">42%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 42%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">42%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 42%;"></div></div>
 				
 			</td>
 			<td>
@@ -5143,7 +5388,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346920">
 					<img data-releaseid="346920" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5162,8 +5407,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">42%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 42%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">42%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 42%;"></div></div>
 				
 			</td>
 			<td>
@@ -5176,7 +5422,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/296280">
 					<img data-releaseid="296280" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5195,8 +5441,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">42%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 42%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">42%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 42%;"></div></div>
 				
 			</td>
 			<td>
@@ -5209,7 +5456,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/311700">
 					<img data-releaseid="311700" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5228,8 +5475,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">41%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 41%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">41%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 41%;"></div></div>
 				
 			</td>
 			<td>
@@ -5242,7 +5490,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/328060">
 					<img data-releaseid="328060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5261,8 +5509,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">38%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 38%;"></div></div>
+					<div class="img-popular negative" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score negative" title="Wilson score">38%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 38%;"></div></div>
 				
 			</td>
 			<td>
@@ -5275,7 +5526,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/350010">
 					<img data-releaseid="350010" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5294,8 +5545,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">38%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 38%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">38%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 38%;"></div></div>
 				
 			</td>
 			<td>
@@ -5308,7 +5560,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/337110">
 					<img data-releaseid="337110" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5327,8 +5579,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">38%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 38%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">38%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 38%;"></div></div>
 				
 			</td>
 			<td>
@@ -5341,7 +5594,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345710">
 					<img data-releaseid="345710" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5360,8 +5613,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">38%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 38%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">38%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 38%;"></div></div>
 				
 			</td>
 			<td>
@@ -5374,7 +5628,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345540">
 					<img data-releaseid="345540" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5393,8 +5647,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">38%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 38%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">38%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 38%;"></div></div>
 				
 			</td>
 			<td>
@@ -5407,7 +5662,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349540">
 					<img data-releaseid="349540" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5426,8 +5681,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">37%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 37%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">37%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 37%;"></div></div>
 				
 			</td>
 			<td>
@@ -5440,7 +5696,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/342450">
 					<img data-releaseid="342450" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5459,8 +5715,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">37%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 37%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">37%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 37%;"></div></div>
 				
 			</td>
 			<td>
@@ -5473,7 +5730,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341360">
 					<img data-releaseid="341360" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5492,8 +5749,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">37%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 37%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">37%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 37%;"></div></div>
 				
 			</td>
 			<td>
@@ -5506,7 +5764,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347030">
 					<img data-releaseid="347030" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5525,8 +5783,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">36%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 36%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">36%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 36%;"></div></div>
 				
 			</td>
 			<td>
@@ -5539,7 +5798,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349950">
 					<img data-releaseid="349950" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5558,8 +5817,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">34%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 34%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">34%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 34%;"></div></div>
 				
 			</td>
 			<td>
@@ -5572,7 +5832,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341930">
 					<img data-releaseid="341930" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5591,8 +5851,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">34%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 34%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">34%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 34%;"></div></div>
 				
 			</td>
 			<td>
@@ -5605,7 +5866,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/343630">
 					<img data-releaseid="343630" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5624,8 +5885,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">33%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 33%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">33%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 33%;"></div></div>
 				
 			</td>
 			<td>
@@ -5638,7 +5900,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/336670">
 					<img data-releaseid="336670" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5657,8 +5919,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">32%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 32%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">32%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 32%;"></div></div>
 				
 			</td>
 			<td>
@@ -5671,7 +5934,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/332790">
 					<img data-releaseid="332790" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5690,8 +5953,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">32%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 32%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">32%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 32%;"></div></div>
 				
 			</td>
 			<td>
@@ -5704,7 +5968,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347690">
 					<img data-releaseid="347690" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5723,8 +5987,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">31%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 31%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">31%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 31%;"></div></div>
 				
 			</td>
 			<td>
@@ -5737,7 +6002,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345580">
 					<img data-releaseid="345580" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5756,8 +6021,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">31%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 31%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">31%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 31%;"></div></div>
 				
 			</td>
 			<td>
@@ -5770,7 +6036,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/351420">
 					<img data-releaseid="351420" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5789,8 +6055,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">30%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 30%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">30%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 30%;"></div></div>
 				
 			</td>
 			<td>
@@ -5803,7 +6070,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349260">
 					<img data-releaseid="349260" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5822,8 +6089,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">30%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 30%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">30%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 30%;"></div></div>
 				
 			</td>
 			<td>
@@ -5836,7 +6104,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349450">
 					<img data-releaseid="349450" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5855,8 +6123,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">30%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 30%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">30%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 30%;"></div></div>
 				
 			</td>
 			<td>
@@ -5869,7 +6138,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/331160">
 					<img data-releaseid="331160" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5888,8 +6157,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">30%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 30%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">30%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 30%;"></div></div>
 				
 			</td>
 			<td>
@@ -5902,7 +6172,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347480">
 					<img data-releaseid="347480" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5921,8 +6191,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">30%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 30%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">30%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 30%;"></div></div>
 				
 			</td>
 			<td>
@@ -5935,7 +6206,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346370">
 					<img data-releaseid="346370" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5954,8 +6225,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">25%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 25%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">25%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 25%;"></div></div>
 				
 			</td>
 			<td>
@@ -5968,7 +6240,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348650">
 					<img data-releaseid="348650" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -5987,8 +6259,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">24%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 24%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">24%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 24%;"></div></div>
 				
 			</td>
 			<td>
@@ -6001,7 +6274,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="1">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/313010">
 					<img data-releaseid="313010" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6020,8 +6293,11 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">22%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 22%;"></div></div>
+					<div class="img-popular negative" title="Popular release" onclick="togglePopular();"></div>
+				
+				
+					<div class="release-score negative" title="Wilson score">22%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 22%;"></div></div>
 				
 			</td>
 			<td>
@@ -6034,7 +6310,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345750">
 					<img data-releaseid="345750" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6053,8 +6329,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">20%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 20%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">20%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 20%;"></div></div>
 				
 			</td>
 			<td>
@@ -6067,7 +6344,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348380">
 					<img data-releaseid="348380" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6086,8 +6363,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">17%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 17%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">17%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 17%;"></div></div>
 				
 			</td>
 			<td>
@@ -6100,7 +6378,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/334960">
 					<img data-releaseid="334960" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6119,8 +6397,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">16%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 16%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">16%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 16%;"></div></div>
 				
 			</td>
 			<td>
@@ -6133,7 +6412,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346200">
 					<img data-releaseid="346200" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6152,8 +6431,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">16%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 16%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">16%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 16%;"></div></div>
 				
 			</td>
 			<td>
@@ -6166,7 +6446,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340920">
 					<img data-releaseid="340920" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6185,8 +6465,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">16%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 16%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">16%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 16%;"></div></div>
 				
 			</td>
 			<td>
@@ -6199,7 +6480,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341690">
 					<img data-releaseid="341690" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6218,8 +6499,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">16%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 16%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">16%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 16%;"></div></div>
 				
 			</td>
 			<td>
@@ -6232,7 +6514,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349750">
 					<img data-releaseid="349750" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6251,8 +6533,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">15%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 15%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">15%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 15%;"></div></div>
 				
 			</td>
 			<td>
@@ -6265,7 +6548,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348000">
 					<img data-releaseid="348000" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6284,8 +6567,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">13%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 13%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">13%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 13%;"></div></div>
 				
 			</td>
 			<td>
@@ -6298,7 +6582,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347580">
 					<img data-releaseid="347580" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6317,8 +6601,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">9%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 9%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">9%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 9%;"></div></div>
 				
 			</td>
 			<td>
@@ -6331,7 +6616,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346240">
 					<img data-releaseid="346240" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6350,8 +6635,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">5%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 5%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">5%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 5%;"></div></div>
 				
 			</td>
 			<td>
@@ -6364,7 +6650,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/350840">
 					<img data-releaseid="350840" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6383,8 +6669,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">0%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 0%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">0%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 0%;"></div></div>
 				
 			</td>
 			<td>
@@ -6397,7 +6684,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/326650">
 					<img data-releaseid="326650" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6416,8 +6703,9 @@
 			</td>
 			<td>
 				
-					<div class="release-score negative" title="Positive Attention (Wilson score)">0%</div>
-					<div class="release-bar" title="Positive Attention (Wilson score)"><div class="negative" style="width: 0%;"></div></div>
+				
+					<div class="release-score negative" title="Wilson score">0%</div>
+					<div class="release-bar" title="Wilson score"><div class="negative" style="width: 0%;"></div></div>
 				
 			</td>
 			<td>
@@ -6430,7 +6718,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345030">
 					<img data-releaseid="345030" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6445,9 +6733,10 @@
 						3D Bridge Engineer
 					</a>
 				</div>
-				<div class="release-genre">Early Access, Simulation, Physics, Sandbox, Building</div>
+				<div class="release-genre">Early Access, Simulation, Physics, Building, Sandbox</div>
 			</td>
 			<td>
+				
 				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
@@ -6462,7 +6751,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/321890">
 					<img data-releaseid="321890" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6481,6 +6770,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6494,7 +6784,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/350330">
 					<img data-releaseid="350330" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6513,6 +6803,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6526,7 +6817,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341500">
 					<img data-releaseid="341500" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6545,6 +6836,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6558,7 +6850,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/345130">
 					<img data-releaseid="345130" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6577,6 +6869,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6590,7 +6883,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340990">
 					<img data-releaseid="340990" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6609,6 +6902,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6622,7 +6916,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346060">
 					<img data-releaseid="346060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6637,9 +6931,10 @@
 						Disney High School Musical 3: Senior Year Dance
 					</a>
 				</div>
-				<div class="release-genre">Adventure, Family Friendly, Horror</div>
+				<div class="release-genre">Adventure, Family Friendly, Horror, Difficult</div>
 			</td>
 			<td>
+				
 				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
@@ -6654,7 +6949,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348850">
 					<img data-releaseid="348850" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6673,6 +6968,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6686,7 +6982,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/338300">
 					<img data-releaseid="338300" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6705,6 +7001,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6718,7 +7015,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/332260">
 					<img data-releaseid="332260" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6737,6 +7034,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6750,7 +7048,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/343140">
 					<img data-releaseid="343140" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6769,6 +7067,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6782,7 +7081,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/331450">
 					<img data-releaseid="331450" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6801,6 +7100,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6814,7 +7114,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/331750">
 					<img data-releaseid="331750" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6833,6 +7133,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6846,7 +7147,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349240">
 					<img data-releaseid="349240" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6865,6 +7166,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6878,7 +7180,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/341460">
 					<img data-releaseid="341460" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6893,9 +7195,10 @@
 						Fallen Temple
 					</a>
 				</div>
-				<div class="release-genre">Early Access, RPG</div>
+				<div class="release-genre">Early Access, RPG, RPGMaker</div>
 			</td>
 			<td>
+				
 				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
@@ -6910,7 +7213,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349780">
 					<img data-releaseid="349780" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6929,6 +7232,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6942,7 +7246,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/349060">
 					<img data-releaseid="349060" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6961,6 +7265,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -6974,7 +7279,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346140">
 					<img data-releaseid="346140" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -6993,6 +7298,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7006,7 +7312,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348980">
 					<img data-releaseid="348980" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7025,6 +7331,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7038,7 +7345,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344270">
 					<img data-releaseid="344270" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7057,6 +7364,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7070,7 +7378,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344220">
 					<img data-releaseid="344220" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7089,6 +7397,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7102,7 +7411,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340130">
 					<img data-releaseid="340130" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7121,6 +7430,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7134,7 +7444,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348860">
 					<img data-releaseid="348860" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7153,6 +7463,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7166,7 +7477,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/344790">
 					<img data-releaseid="344790" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7185,6 +7496,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7198,7 +7510,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348870">
 					<img data-releaseid="348870" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7217,6 +7529,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7230,7 +7543,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/348960">
 					<img data-releaseid="348960" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7249,6 +7562,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7262,7 +7576,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/318300">
 					<img data-releaseid="318300" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7281,6 +7595,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7294,7 +7609,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/284910">
 					<img data-releaseid="284910" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7313,6 +7628,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7326,7 +7642,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/334480">
 					<img data-releaseid="334480" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7345,6 +7661,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7358,7 +7675,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/343320">
 					<img data-releaseid="343320" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7377,6 +7694,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7390,7 +7708,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/340410">
 					<img data-releaseid="340410" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7409,6 +7727,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7422,7 +7741,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/338550">
 					<img data-releaseid="338550" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7441,6 +7760,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7454,7 +7774,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/346950">
 					<img data-releaseid="346950" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7473,6 +7793,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7486,7 +7807,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/262630">
 					<img data-releaseid="262630" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7505,6 +7826,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7518,7 +7840,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/322030">
 					<img data-releaseid="322030" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7537,6 +7859,7 @@
 			</td>
 			<td>
 				
+				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
 			</td>
@@ -7550,7 +7873,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/337980">
 					<img data-releaseid="337980" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7565,9 +7888,10 @@
 						Vagrant Hearts
 					</a>
 				</div>
-				<div class="release-genre">RPG, Indie, Adventure, Casual, RPGMaker</div>
+				<div class="release-genre">RPG, Indie, Adventure, Casual, Female Protagonist</div>
 			</td>
 			<td>
+				
 				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
@@ -7582,7 +7906,7 @@
 			</td>
 		</tr>
 		
-		<tr>
+		<tr data-popular="0">
 			<td>
 				<a target="_blank" href="http://store.steampowered.com/app/347050">
 					<img data-releaseid="347050" onload="fadeInOnLoad(this, 250)" class="release-image" width="120" height="45" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
@@ -7600,6 +7924,7 @@
 				<div class="release-genre">Early Access, Indie, Strategy</div>
 			</td>
 			<td>
+				
 				
 					<div class="release-score" style="color: #3D4653;" title="Not enough votes">n/a</div>
 				
