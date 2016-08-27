@@ -242,6 +242,9 @@
 		scrollHappened = true;
 	}
 	function isElementInViewport(el) {
+		if (el.offsetParent == null) {
+			return false;
+		}
 		var rect = el.getBoundingClientRect();
 		return (
 			rect.top >= 0 &&
